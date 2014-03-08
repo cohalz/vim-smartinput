@@ -12,7 +12,7 @@ describe 'smartinput#map_to_trigger'
     call smartinput#define_rule({
     \   'at': '(\%#)',
     \   'char': '<Return>',
-    \   'input': '<Return>X<Return>)<BS><Up><C-o>$<BS>',
+    \   'input': '<Return>*<Return>)<BS><Up><C-o>$<BS>',
     \ })
     call smartinput#map_to_trigger('i', '<buffer> <Return>', '<Return>')
   end
